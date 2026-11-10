@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fredoka } from "next/font/google";
 import Link from "next/link";
+import { LoginGate } from "@/components/LoginGate";
 import { SeasonNav } from "@/components/SeasonNav";
 import { seasons } from "@/content";
 import "./globals.css";
@@ -26,13 +27,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="da" className={`${fredoka.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <header className="site-header">
-          <Link href="/" className="site-logo">
-            <span aria-hidden>🗓️</span> Sæsonkalender
-          </Link>
-          <SeasonNav seasons={seasons.map(({ id, name, emoji }) => ({ id, name, emoji }))} />
-        </header>
-        {children}
+        <LoginGate>
+          <header className="site-header">
+            <Link href="/" className="site-logo">
+              <span aria-hidden>🗓️</span> Sæsonkalender
+            </Link>
+            <SeasonNav seasons={seasons.map(({ id, name, emoji }) => ({ id, name, emoji }))} />
+          </header>
+          {children}
+        </LoginGate>
       </body>
     </html>
   );

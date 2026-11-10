@@ -1053,3 +1053,61 @@ body {
     max-height: 95vh;
   }
 }
+
+/* ---------- Login ---------- */
+.login {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+}
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  display: grid;
+  gap: 16px;
+  padding: 32px 28px;
+  background: var(--panel);
+  color: var(--ink);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.login-emoji {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+.login-card h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.login-intro {
+  color: var(--muted);
+  margin-top: -8px;
+}
+.login-field {
+  display: grid;
+  gap: 6px;
+  text-align: left;
+  font-weight: 600;
+}
+.login-field input {
+  font: inherit;
+  font-weight: 400;
+  padding: 12px 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 14px;
+  background: #fff;
+  color: var(--ink);
+}
+.login-field input:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+}
+.login-error {
+  color: #b91c1c;
+  font-weight: 600;
+}
+.login-card .btn {
+  justify-content: center;
+}
