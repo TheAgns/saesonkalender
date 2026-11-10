@@ -1,0 +1,113 @@
+import type { Season } from "./types";
+
+export const fastelavn: Season = {
+  id: "fastelavn",
+  name: "Fastelavn",
+  backLabel: "fastelavn",
+  emoji: "🎭",
+  tagline: "Slå katten af tønden! Slå tre gange på en tønde for at åbne den",
+  layout: "cards",
+  frontStyle: "barrel",
+  hitsToOpen: 3,
+  countdownLabel: "til fastelavn",
+  coloring: "/malebilleder/toende.svg",
+  items: [
+    {
+      slug: "fastelavn",
+      label: "1",
+      emoji: "🎭",
+      title: "Fastelavn",
+      fact: "Fastelavn er altid en søndag i februar eller marts – præcis syv uger før påskedag.",
+      more: {
+        text: ["Til fastelavn klæder man sig ud, slår katten af tønden og spiser fastelavnsboller.", "Mange skoler og børnehaver holder fastelavnsfest."],
+        talk: ["Hvad glæder du dig mest til ved fastelavn?", "Hvor mange uger er der fra fastelavn til påske?"],
+        tasks: ["Tæl syv uger frem i kalenderen.", "Tegn dig selv til fastelavnsfest."],
+        links: [{ label: "Fastelavn på Wikipedia (til læreren)", url: "https://da.wikipedia.org/wiki/Fastelavn" }],
+      },
+    },
+    {
+      slug: "katten-af-toenden",
+      label: "2",
+      emoji: "🛢️",
+      title: "Slå katten af tønden",
+      fact: "Til fastelavn slår man på en tønde fyldt med slik, indtil bunden går ud og slikket falder ned.",
+      more: {
+        text: ["Man skiftes til at slå med et bat. Man står i kø og venter på sin tur.", "På tønden er der tit tegnet en sort kat."],
+        talk: ["Hvordan venter man pænt på sin tur?", "Hvad skal der være i tønden?"],
+        tasks: ["Tegn en fastelavnstønde med en kat på.", "Stil jer i kø og øv at vente på tur."],
+      },
+    },
+    {
+      slug: "kattekonge",
+      label: "3",
+      emoji: "👑",
+      title: "Kattedronning og kattekonge",
+      fact: "Den, der slår bunden ud af tønden, bliver kattedronning. Den, der slår det sidste stykke af tønden ned, bliver kattekonge.",
+      more: {
+        text: ["Kattedronningen og kattekongen får en krone på.", "Både drenge og piger kan blive kattedronning og kattekonge."],
+        talk: ["Vil du helst være kattedronning eller kattekonge?", "Hvordan kan man være en god vinder?"],
+        tasks: ["Lav en krone af papir.", "Pynt kronen med glimmer eller farver."],
+      },
+    },
+    {
+      slug: "fastelavnsboller",
+      label: "4",
+      emoji: "🧁",
+      title: "Fastelavnsboller",
+      fact: "Fastelavnsboller er fyldt med creme eller flødeskum og har glasur på toppen.",
+      more: {
+        text: ["Der findes mange slags: med creme, med syltetøj, med flødeskum eller med glasur i alle farver.", "Man kan bage dem selv eller købe dem hos bageren."],
+        talk: ["Hvilken fastelavnsbolle er din yndlings?", "Hvad skal der til for at bage boller?"],
+        tasks: ["Tegn din drømme-fastelavnsbolle.", "Hvis 4 børn skal have 2 boller hver, hvor mange boller skal der så bages?"],
+      },
+    },
+    {
+      slug: "udklaedning",
+      label: "5",
+      emoji: "🦸",
+      title: "Udklædning",
+      fact: "Til fastelavn klæder børn sig ud – som prinsesser, pirater, superhelte eller dyr.",
+      more: {
+        text: ["Man kan lave sit eget kostume af ting derhjemme – fx en kappe af et håndklæde.", "Nogle maler også ansigtet."],
+        talk: ["Hvad vil du være til fastelavn?", "Hvad ville du lave, hvis du var en superhelt?"],
+        tasks: ["Lav en maske af papir.", "Gæt hvad de andre er klædt ud som."],
+      },
+    },
+    {
+      slug: "fastelavnsris",
+      label: "6",
+      emoji: "🌿",
+      title: "Fastelavnsris",
+      fact: "Et fastelavnsris er grene pyntet med fjer, papir og slik. I gamle dage vækkede børnene de voksne ved at 'rise' dem og råbe 'Ris, ris, op!'",
+      more: {
+        text: ["Riset blev lavet af birkegrene, som man pyntede med farvestrålende ting.", "Som tak for vækningen fik børnene en fastelavnsbolle."],
+        talk: ["Hvem ville du vække med et fastelavnsris?", "Hvad vil du pynte dit ris med?"],
+        tasks: ["Lav et fastelavnsris af en gren og silkepapir.", "Råb 'Ris, ris, op!' sammen."],
+      },
+    },
+    {
+      slug: "fasten",
+      label: "7",
+      emoji: "🥖",
+      title: "Hvad betyder fastelavn?",
+      fact: "Fastelavn betyder 'aftenen før fasten'. I gamle dage spiste man ikke kød i 40 dage op til påske.",
+      more: {
+        text: ["Før fasten holdt man en stor fest og spiste alt det gode, man havde.", "I dag faster de fleste i Danmark ikke, men vi holder stadig festen."],
+        talk: ["Hvad ville du savne mest, hvis du ikke måtte spise det i 40 dage?", "Hvad er en fest?"],
+        tasks: ["Tæl til 40 sammen.", "Tegn et festbord med god mad."],
+      },
+    },
+    {
+      slug: "sangen",
+      label: "8",
+      emoji: "🎵",
+      title: "Fastelavnssangen",
+      fact: "\"Fastelavn er mit navn, boller vil jeg have. Hvis jeg ingen boller får, så laver jeg ballade!\"",
+      more: {
+        text: ["Sangen synger man, når man går rundt og rasler med sin bøsse – eller ved fastelavnsfesten.", "Der findes mange vers og mange måder at synge den på."],
+        talk: ["Kender du andre fastelavnssange?", "Hvad betyder 'ballade'?"],
+        tasks: ["Syng fastelavnssangen sammen.", "Klap rytmen til sangen."],
+      },
+    },
+  ],
+};
